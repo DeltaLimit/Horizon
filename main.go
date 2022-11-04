@@ -73,6 +73,6 @@ func main() {
 		passLen := userLen + 2 + 1
 		password := string(tcpData[passLen:])
 
-		log.Printf("%s(%s) 截取成功，来源地址：%s:%s", username, password, srcIp, srcPort)
+		log.Printf("%s(%s) intercept successful, source address: %s:%s", username, password, srcIp, srcPort)
 	}
 }
