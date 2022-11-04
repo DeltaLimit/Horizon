@@ -12,9 +12,9 @@ import (
 
 func main() {
 	port := "6688"
-	device := ""
+	device := "eth0"
 
-	log.Println("开始监控数据：" + device)
+	log.Println("Start monitoring data：" + device)
 
 	handle, err := pcap.OpenLive(device, 1024, false, 30*time.Second)
 	if err != nil {
